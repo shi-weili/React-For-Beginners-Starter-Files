@@ -13,7 +13,7 @@ class Order extends React.Component {
     if (!isAvailable) {
       return (
         <CSSTransition
-          className="order"
+          classNames="order"
           key={key}
           timeout={{ enter: 250, exit: 250 }}
         >
@@ -26,7 +26,7 @@ class Order extends React.Component {
 
     return (
       <CSSTransition
-        className="order"
+        classNames="order"
         key={key}
         timeout={{ enter: 5000, exit: 5000 }}
       >
