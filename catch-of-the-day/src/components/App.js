@@ -14,7 +14,7 @@ class App extends React.Component {
   };
 
   static propTypes = {
-    match: PropTypes.object
+    match: PropTypes.object.isRequired
   };
 
   componentDidMount() {
@@ -104,7 +104,7 @@ class App extends React.Component {
           updateFish={this.updateFish}
           deleteFish={this.deleteFish}
           fishes={this.state.fishes}
-          stroeId={this.props.match.params.storeId}
+          storeId={this.props.match.params.storeId}
         ></Inventory>
       </div>
     );
